@@ -1,20 +1,38 @@
-h1{
-    font-size: 5em;
-    letter-spacing: 6px;
-    font-family: 'Amatic SC', cursive;
-    text-align: center;
+.alignshow{
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+h1{
+    /* color: white; */
+    font-size: 5em;
+    letter-spacing: 12px;
+    margin-right: -10px;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
     line-height: 1em;
 }
 footer{
     position:absolute;
     bottom:0;
     width:99%;
-    /* height:100px; */
-    /* background-color: #ffc0cb; */
     text-align: center;
     overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+a{
+    /* border: 1px solid black; */
+    color: black;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+a:hover{
+    color:gray
 }
