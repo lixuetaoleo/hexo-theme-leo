@@ -1,4 +1,4 @@
-.alignshow {
+.wordsAtCenter {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -56,7 +56,7 @@ nav a:hover {
 .link-item{
     text-decoration: none;
     margin: 10px;
-    color: gray;
+    color: black;
 }
 .iconfont {
   font-family: "iconfont" !important;
@@ -75,4 +75,19 @@ nav a:hover {
 }
 .icon-instagram:before {
   content: "\e886";
+}
+body{
+	height: 100vh;
+	width: 100vw;
+	margin: 0px;
+}
+#backgroundImage{
+	/* background-color: aqua; */
+	min-height: 100%;
+	min-width: 100%;
+	opacity: 0.7;
+	background-image: url("../maarten-duineveld-pmfJcN7RGiw-unsplash.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
