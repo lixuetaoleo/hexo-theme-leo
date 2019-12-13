@@ -10,12 +10,13 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  /* justify-content:space-between; */
+  width: 100%;
+  /* margin-left: 10px;
+  margin-right: 10px; */
 }
 nav ul {
-  /* flex-grow: 1; */
+  flex:1;
   list-style-type: none;
   padding-left: 0;
   float: left;
@@ -34,24 +35,14 @@ a:hover {
   color: gray;
 }
 footer {
-  /* position: absolute; */
   /* bottom: 0; */
   /* width: 100%; */
   text-align: center;
-  /* align-self: flex-end; */
 }
 
 .socialmedia {
-  /* float: right; */
-  /* position: ; */
-  /* bottom: 0; */
-  /* height: 150px; */
-  /* width: 100%; */
-  /* text-align: center; */
-  /* overflow: hidden; */
-  /* text-align: right; */
-  /* margin: auto; */
-  /* flex-grow: 1; */
+  text-align: right;
+  flex:1;
   padding-top: 16px;
   padding-right: 0;
 }
@@ -91,17 +82,13 @@ footer {
 }
 main {
   /* align-self: center; */
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; */
   margin: auto;
+  margin-top: 50px;
 }
 
 .homepage {
-  /* flex-grow: 1; */
-  /* font-family: "Amatic SC", cursive;
-  font-size: 3em; */
+  flex:1;
+  text-align: center;
 }
 .homepage a {
   font-family: "Amatic SC", cursive;
@@ -110,4 +97,6 @@ main {
 
 .favimg{
    text-align: center;
+    top: 30px;
+   padding-bottom: 30px;
 }
