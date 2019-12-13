@@ -1,11 +1,14 @@
-// let bgi = document.getElementById("bgi");
+let bgi = document.getElementById("backgroundImage");
+var nthimg = 0;
+window.onload = function(){
+    bgi.style.backgroundImage = "url(img1.jpg)";
+}
 
-// let width = window.innerWidth;
-// let height = window.innerHeight;
-// console.log(width);
-// console.log(height);
-// window.onload = function(){
-//     bgi.setAttribute("height",height);
-// bgi.setAttribute("width",width);
-// }
+setInterval(changeImg, 4000);
 
+function changeImg(){
+    console.log("changeimg")
+    bgi.style.backgroundImage = 'url(img'+nthimg+'.jpg)';
+    bgi.style.transitionDuration = "1s"
+    nthimg = (++nthimg) % 2;
+}
