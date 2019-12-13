@@ -58,9 +58,11 @@ footer {
 }
 .link-item {
   text-decoration: none;
-  
   margin: 10px;
   color: black;
+}
+.link-item:last-child{
+    margin-right:0;
 }
 .iconfont {
   font-family: "iconfont" !important;
