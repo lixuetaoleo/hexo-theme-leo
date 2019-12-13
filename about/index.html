@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>About | Li Xuetao's Homepage</title>
+    <!-- <link rel="icon" href="/favicon.ico"> -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-header header-logo"><a href="/">Home</a></div>
+                    <div class="menu navbar-right">
+
+                        <a class="menu-item" href="/categories/Software-Development">Software Development</a>
+
+                        <a class="menu-item" href="/categories/Inspiration">Inspiration</a>
+
+                        <a class="menu-item" href="/categories/Tech">Tech</a>
+
+                        <a class="menu-item" href="/archives">Archives</a>
+
+                        <a class="menu-item" href="/tag">Tags</a>
+
+                        <a class="menu-item" href="/about">About</a>
+
+                        <input id="switch_default" type="checkbox" class="switch_default">
+                        <label for="switch_default" class="toggleBtn"></label>
+                    </div>
+
+                </div>
+            </nav>
+
+
+            <nav class="navbar-mobile" id="nav-mobile">
+                <div class="container">
+                    <div class="navbar-header">
+                        <div>
+                            <a href="/">Home</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                        </div>
+                        <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+                    </div>
+                    <div class="menu" id="mobile-menu">
+
+                        <a class="menu-item" href="/categories/Software-Development">Software Development</a>
+
+                        <a class="menu-item" href="/categories/Inspiration">Inspiration</a>
+
+                        <a class="menu-item" href="/categories/Tech">Tech</a>
+
+                        <a class="menu-item" href="/archives">Archives</a>
+
+                        <a class="menu-item" href="/tag">Tags</a>
+
+                        <a class="menu-item" href="/about">About</a>
+
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <script>
+            var mobileBtn = function f() {
+                var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+                var mobileMenu = document.getElementById("mobile-menu");
+                if (toggleMenu.classList.contains("active")) {
+                    toggleMenu.classList.remove("active")
+                    mobileMenu.classList.remove("active")
+                } else {
+                    toggleMenu.classList.add("active")
+                    mobileMenu.classList.add("active")
+                }
+            }
+        </script>
+        <div class="main">
+            <div class="container">
+                <article class="post-wrap page">
+
+                    <h2 class="post-title">About</h2>
+
+                    <section class="post-content">
+                        <h3 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h3>
+                        <ul>
+                            <li>
+                                <p>本科 | <a href="http://www.xupt.edu.cn/" target="_blank"
+                                        rel="noopener">西安邮电大学(XUPT)</a> | 电子信息工程 | 2014.9–2018.7</p>
+                            </li>
+                            <li>
+                                <p>硕士(在读) | <a href="https://www.xidian.edu.cn/" target="_blank"
+                                        rel="noopener">西安电子科技大学(XDU)</a> | 软件工程 | 2018.9–2021.7 ?</p>
+                            </li>
+                        </ul>
+                        <hr>
+                        <h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3>
+                        <p>email : <a href="mailto:lixuetaoleo@163.com" target="_blank"
+                                rel="noopener">lixuetaoleo@163.com</a> | <a href="mailto:lixuetaoleo@gmail.com"
+                                target="_blank" rel="noopener">lixuetaoleo@gmail.com</a></p>
+                        <hr>
+                        <h3 id="关注我"><a href="#关注我" class="headerlink" title="关注我"></a>关注我</h3>
+                        <p><a href="https://weibo.com/u/1791741344" target="_blank" rel="noopener">微博</a></p>
+                        <p><a href="https://www.instagram.com/lixuetaoleo/" target="_blank" rel="noopener">Instagram</a>
+                        </p>
+                        <hr>
+                        <h3 id="兴趣？"><a href="#兴趣？" class="headerlink" title="兴趣？"></a>兴趣？</h3>
+                        <ul>
+                            <li>
+                                <p>爱旅行，西至敦煌东至东极岛，南达三亚北只及北京hhh</p>
+                            </li>
+                            <li>
+                                <p>爱读书，任何类型的书</p>
+                            </li>
+                            <li>
+                                <p>爱音乐，爱摇滚，最爱许巍、朴树，也爱新裤子, Coldplay, Oasis；会一点吉他，想写歌</p>
+                            </li>
+                            <li>
+                                <p>爱运动，爱足球，最爱巴萨梅西阿根廷，也爱多特罗伊斯，但主队永远是中国队！</p>
+                            </li>
+                            <li>
+                                <p>爱运动，爱滑雪，吸食白色鸦片，想学单板。</p>
+                            </li>
+                            <li>
+                                <p>爱宅，爱看各种自认为好看的电影&amp;电视剧，爱玩Switch，塞尔达天下第一！！！只要你吹塞尔达我们就能做朋友</p>
+                            </li>
+                            <li>
+                                <p>最后，爱我的家人和朋友，爱这个千疮百孔的世界</p>
+                            </li>
+                        </ul>
+                        <hr>
+
+                    </section>
+                </article>
+            </div>
+
+        </div>
+        <footer id="footer" class="footer">
+            <div class="copyright">
+                <span>© Li Xuetao | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a
+                        href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
