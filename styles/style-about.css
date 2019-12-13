@@ -5,22 +5,24 @@ body {
   margin: 0;
   overflow: hidden;
   flex-direction: column;
+  align-items: center;
 }
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
 }
 nav ul {
+  /* flex-grow: 1; */
   list-style-type: none;
   padding-left: 0;
   float: left;
 }
 nav li {
-    /* font-size: 24px; */
-    font-weight: bold;
+  /* font-size: 24px; */
+  font-weight: bold;
   display: inline-block;
   margin-right: 10px;
 }
@@ -36,6 +38,7 @@ footer {
   /* bottom: 0; */
   /* width: 100%; */
   text-align: center;
+  /* align-self: flex-end; */
 }
 
 .socialmedia {
@@ -48,6 +51,7 @@ footer {
   /* overflow: hidden; */
   /* text-align: right; */
   /* margin: auto; */
+  /* flex-grow: 1; */
   padding-top: 16px;
   padding-right: 0;
 }
@@ -85,12 +89,25 @@ footer {
 .icon-instagram:before {
   content: "\e886";
 }
-main{
-    /* align-self: center; */
-    margin: auto;
+main {
+  /* align-self: center; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; */
+  margin: auto;
 }
 
-.homepage a{
-    font-family: "Amatic SC", cursive;
-    font-size: 3em;
+.homepage {
+  /* flex-grow: 1; */
+  /* font-family: "Amatic SC", cursive;
+  font-size: 3em; */
+}
+.homepage a {
+  font-family: "Amatic SC", cursive;
+  font-size: 3em;
+}
+
+.favimg{
+   text-align: center;
 }
