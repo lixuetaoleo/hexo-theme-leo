@@ -32,9 +32,9 @@ a:hover {
   color: gray;
 }
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* width: 100%; */
   text-align: center;
 }
 
@@ -85,11 +85,12 @@ footer {
 .icon-instagram:before {
   content: "\e886";
 }
+main{
+    /* align-self: center; */
+    margin: auto;
+}
 
-/* .item:nth-child(1){
-      align-self: flex-start;
-  } */
-/* .item:nth-child(2) {
-  align-self: center;
-  margin: auto;
-} */
+.homepage a{
+    font-family: "Amatic SC", cursive;
+    font-size: 3em;
+}
