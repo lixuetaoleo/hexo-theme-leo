@@ -27,6 +27,15 @@ nav li {
   display: inline-block;
   margin-right: 10px;
 }
+.jump{
+  flex: 1;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.jump a{
+  margin-right: 10px;
+  font-weight: bold;
+}
 a {
   text-decoration: none;
   color: black;
@@ -43,8 +52,9 @@ footer {
 .socialmedia {
   text-align: right;
   flex:1;
-  padding-top: 16px;
-  padding-right: 0;
+  padding-top: 10px;
+  /* padding-right: 0; */
+  margin-right: 10px;
 }
 
 @font-face {
