@@ -9,11 +9,10 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": ""
+    "version": "4.2.0"
   },
   "dependencies": {
     "hexo": "^4.0.0",
-    "hexo-browsersync": "^0.3.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^1.0.0",
@@ -21,6 +20,10 @@
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-less": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
+  },
+  "devDependencies": {
+    "hexo-browsersync": "^0.3.0",
+    "hexo-renderer-jade": "^0.5.0",
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0"
   }
