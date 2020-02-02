@@ -1,7 +1,10 @@
 extends includes/layout.pug
 
 block content
+  div= 'testtetet'
   article#post
     h1= page.title
     != page.content
+  .sidebar-toc!= toc(page.content) 
+  //- 给toc传入当前页面的内容用于生成目录结构
   #paginator!= paginator()

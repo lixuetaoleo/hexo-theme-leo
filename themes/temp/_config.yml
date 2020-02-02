@@ -1,12 +1,11 @@
 
 # html lang
-language: en
+language: zh-CN
 
 # main menu navigation
 menu:
-  Home: /
+  Li Xuetao: /
   About: /about
-  Contact: /contact
   Archives: /archives
 
 # stylesheets loaded in the <head>
