@@ -3,6 +3,7 @@
 doctype html
 html(lang=config.language)
   head
+    meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1")
     meta(charset='UTF-8')
     title= config.author
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
@@ -18,6 +19,15 @@ html(lang=config.language)
           each url, label in theme.menu
             if label!=config.title
               a(href=url)= label
+      div.socialmedia-main
+        a(class='link-item link-item-main', title='Twitter', href="https://twitter.com/lixuetaoleo")
+          i(class='iconfont icon-twitter')
+        a(class='link-item link-item-main', title='Instagram', href="https://www.instagram.com/lixuetaoleo/")
+          i(class='iconfont icon-instagram')
+        a(class='link-item link-item-main', title='Weibo', href="https://weibo.com/u/1791741344")
+          i(class='iconfont icon-weibo')
+        a(class='link-item link-item-main', title='GitHub', href="https://github.com/lixuetaoleo")
+          i(class='iconfont icon-github')  
       #bottom-outer
         #bottom-inner
           span © 2019-2020 By 

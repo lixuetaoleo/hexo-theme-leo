@@ -9,6 +9,7 @@
 doctype html
 html(lang=config.language)
   head
+    meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1")
     meta(charset='UTF-8')
     title= pageTitle
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
@@ -18,9 +19,19 @@ html(lang=config.language)
   body
     #menu-outer
       nav#menu-inner
-        each url, label in theme.menu
-          a(href=url)= label
+        div.other-page
+          each url, label in theme.menu
+            a(href=url)= label
         a#mega-head(href='/')= config.author
+        div.socialmedia-layout
+          a(class='link-item link-item-layout', title='Twitter', href="https://twitter.com/lixuetaoleo")
+            i(class='iconfont icon-twitter')
+          a(class='link-item link-item-layout', title='Instagram', href="https://www.instagram.com/lixuetaoleo/")
+            i(class='iconfont icon-instagram')
+          a(class='link-item link-item-layout', title='Weibo', href="https://weibo.com/u/1791741344")
+            i(class='iconfont icon-weibo')
+          a(class='link-item link-item-layout', title='GitHub', href="https://github.com/lixuetaoleo")
+            i(class='iconfont icon-github')
     #content-outer
       #content-inner
         if body

@@ -10,7 +10,6 @@ block content
     //- if !is_year()
 
     h1= 'Archives--'+site.posts.length
-    -console.log(site.posts.length)
 
     //- if theme.atom
     //-   p The feed is available via&nbsp;
@@ -38,7 +37,7 @@ block content
     //- h2 Archives
     if archivesList
       //- h1= page.month + '/' + page.year
-
+      //- h2= 'page.year'
       - page.posts.each(function(article){
         .archive-list-item
           a.archive-article-title(href=url_for(article.path))= article.title

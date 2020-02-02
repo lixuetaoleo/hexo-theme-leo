@@ -1,9 +1,13 @@
 extends includes/layout.pug
 
 block content
-  div= 'testtetet'
   article#post
     h1= page.title
+    span Created Date: 
+    time(datetime=date_xml(page.date))= date(page.date)
+    //- br
+    //- span Updated Date: 
+    //- time(datetime=date_xml(page.updated))= date(page.updated)
     != page.content
   .sidebar-toc!= toc(page.content) 
   //- 给toc传入当前页面的内容用于生成目录结构
