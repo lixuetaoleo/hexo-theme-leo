@@ -5,7 +5,6 @@
 - if (is_category()) pageTitle = 'Category: ' + page.category
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 - if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += ' [ ' + config.title + ' ]'
 
 doctype html
 html(lang=config.language)
@@ -21,6 +20,7 @@ html(lang=config.language)
       nav#menu-inner
         each url, label in theme.menu
           a(href=url)= label
+        a#mega-head(href='/')= config.author
     #content-outer
       #content-inner
         if body
@@ -29,14 +29,12 @@ html(lang=config.language)
           block content
     #bottom-outer
       #bottom-inner
-        span Site construction by
-        span= ' ' + config.author + ' '
-        span using
-        a(href='http://hexo.io')
-          span hexo blog framework
-        span .
-        br
-        a(href=config.root) Home
+        span © 2019-2020 By 
+          a(href='https://lixuetaoleo.github.io')= 'Li Xuetao'
+          span  using 
+          a(href='http://hexo.io')
+            span HEXO
+          span .
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts

@@ -4,7 +4,7 @@ language: zh-CN
 
 # main menu navigation
 menu:
-  Li Xuetao: /
+  # Li Xuetao: /
   About: /about
   Archives: /archives
 
