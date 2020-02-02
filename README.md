@@ -1,2 +1,3 @@
 # Personal-Blog-prototype
-自己手搓个人博客
+design a prototype theme for my personal blog 
+TODO: Create a HEXO theme from the prototype
