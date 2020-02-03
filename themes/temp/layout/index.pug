@@ -14,29 +14,22 @@ html(lang=config.language)
     div#main-page
       div#mega-title
         h1!= config.author
-      #menu-outer
-        div#menu-inner
-          each url, label in theme.menu
-            if label!=config.title
-              a(href=url)= label
-      div.socialmedia-main
-        a(class='link-item link-item-main', title='Twitter', href="https://twitter.com/lixuetaoleo")
-          i(class='iconfont icon-twitter')
-        a(class='link-item link-item-main', title='Instagram', href="https://www.instagram.com/lixuetaoleo/")
-          i(class='iconfont icon-instagram')
-        a(class='link-item link-item-main', title='Weibo', href="https://weibo.com/u/1791741344")
-          i(class='iconfont icon-weibo')
-        a(class='link-item link-item-main', title='GitHub', href="https://github.com/lixuetaoleo")
-          i(class='iconfont icon-github')  
-      #bottom-outer
-        #bottom-inner
-          span © 2019-2020 By 
-          a(href='https://lixuetaoleo.github.io')= 'Li Xuetao'
-          span  using 
-          a(href='http://hexo.io')
-            span HEXO
-          span .
-    //- if theme.scripts !== undefined && theme.scripts.length > 0
-    //-   //- scripts list from config.yml
-    //-   each url in theme.scripts
-    //-     script(src=url)
+        p= theme.description
+      div#menu
+        each url, label in theme.menu
+          if label!=config.title
+            a(href=url)= label
+      div.main-socialmedia
+        each url,label in config.socialmedia
+          a(class='link-item main-link-item' title=label href=url)
+            i(class='iconfont icon-'+theme.social_icons[label])
+      footer#bottom
+        span Created By 
+        a(href='https://lixuetaoleo.github.io')= 'Li Xuetao'
+        span  | 
+        a(href='http://hexo.io')
+          span HEXO
+    if theme.scripts !== undefined && theme.scripts.length > 0
+      //- scripts list from config.yml
+      each url in theme.scripts
+        script(src=url)

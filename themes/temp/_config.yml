@@ -15,3 +15,14 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
 - /js/temp.js
+
+social_icons:
+  enable: true
+  # Icon Mappings.
+  # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
+  GitHub: github
+  Twitter: twitter
+  Weibo: weibo
+  Instagram: instagram
+
+description: Life is fantastic :)

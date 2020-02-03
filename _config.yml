@@ -102,3 +102,13 @@ deploy:
 
 server:
   compress: true # 开启压缩
+
+
+socialmedia:
+  Instagram: https://www.instagram.com/lixuetaoleo/
+  Twitter: https://twitter.com/lixuetaoleo
+  Weibo: https://weibo.com/u/1791741344
+  GitHub: https://github.com/lixuetaoleo
+
+mainpage-quote: Life is fantastic
+  
