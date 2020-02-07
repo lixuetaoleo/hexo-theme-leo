@@ -15,7 +15,7 @@ html(lang=config.language)
       div#mega-title
         h1!= config.author
         p= theme.description
-      div#menu
+      div#index-menu
         each url, label in theme.menu
           if label!=config.title
             a(href=url)= label

@@ -11,41 +11,33 @@ html(lang=config.language)
   head
     meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1")
     meta(charset='UTF-8')
-    title= pageTitle
+    title= pageTitle + ' | ' + config.title
     if theme.stylesheets !== undefined && theme.stylesheets.length > 0
       //- stylesheets list from _config.yml
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
   body
-    #menu-outer
-      nav#menu-inner
+    #layout-page
+      nav#layout-menu
         div.other-page
           each url, label in theme.menu
             a(href=url)= label
         a#mega-head(href='/')= config.author
-        div.socialmedia-layout
-          a(class='link-item link-item-layout', title='Twitter', href="https://twitter.com/lixuetaoleo")
-            i(class='iconfont icon-twitter')
-          a(class='link-item link-item-layout', title='Instagram', href="https://www.instagram.com/lixuetaoleo/")
-            i(class='iconfont icon-instagram')
-          a(class='link-item link-item-layout', title='Weibo', href="https://weibo.com/u/1791741344")
-            i(class='iconfont icon-weibo')
-          a(class='link-item link-item-layout', title='GitHub', href="https://github.com/lixuetaoleo")
-            i(class='iconfont icon-github')
-    #content-outer
-      #content-inner
+        div.layout-socialmedia
+          each url,label in config.socialmedia
+            a(class='link-item main-link-item' title=label href=url)
+              i(class='iconfont icon-'+theme.social_icons[label])
+      #content
         if body
           div!= body
         else
           block content
-    #bottom-outer
-      #bottom-inner
-        span © 2019-2020 By 
-          a(href='https://lixuetaoleo.github.io')= 'Li Xuetao'
-          span  using 
-          a(href='http://hexo.io')
-            span HEXO
-          span .
+      footer#bottom
+        span Created By 
+        a(href='https://lixuetaoleo.github.io')= 'Li Xuetao'
+        span  | 
+        a(href='http://hexo.io')
+          span HEXO
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts
