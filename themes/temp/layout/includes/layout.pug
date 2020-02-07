@@ -16,6 +16,8 @@ html(lang=config.language)
       //- stylesheets list from _config.yml
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
+    <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/github.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato|Ubuntu+Mono&display=swap" rel="stylesheet">
   body
     #layout-page
       nav#layout-menu
@@ -42,3 +44,5 @@ html(lang=config.language)
       //- scripts list from config.yml
       each url in theme.scripts
         script(src=url)
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>

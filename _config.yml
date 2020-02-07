@@ -45,7 +45,7 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
@@ -109,6 +109,5 @@ socialmedia:
   Twitter: https://twitter.com/lixuetaoleo
   Weibo: https://weibo.com/u/1791741344
   GitHub: https://github.com/lixuetaoleo
-
-mainpage-quote: Life is fantastic
+  # Facebook:
   
