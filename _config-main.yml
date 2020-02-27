@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: LI XUETAO
+title: title name
 subtitle:
 description:
 keywords:
-author: Li Xuetao
+author: author name
 language: en
 timezone:
 
@@ -77,29 +77,30 @@ theme: temp
 
 server:
   compress: true # 开启压缩
-  
+
+# Uncomment the tag & add url to show the link you want to show
 socialmedia:
-  Instagram: https://www.instagram.com/lixuetaoleo/
-  Twitter: https://twitter.com/lixuetaoleo
-  Weibo: https://weibo.com/u/1791741344
-  GitHub: https://github.com/lixuetaoleo
-  # Facebook: fds
-  # ZhiHu: https://www.zhihu.com/people/sirice
-  # LinkedIn: f
-  # Skype: fds
-  # CodeSandBox: f sda
-  # CodePen: fsa
-  # Sketch: fdsa
-  # Gitlab: fdsa
-  # # Dribble:
-  # # Reddit:
-  # YouTube: fds
-  # QQ: fdsa
-  # WeChat: fdsa
+  # Instagram: 
+  # Twitter: 
+  # Weibo: 
+  # GitHub: 
+  # Facebook: 
+  # ZhiHu: 
+  # LinkedIn: 
+  # Skype: 
+  # CodeSandBox: 
+  # CodePen: 
+  # Sketch: 
+  # Gitlab: 
+  # Dribble:
+  # Reddit:
+  # YouTube: 
+  # QQ: 
+  # WeChat: 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: git@github.com:lixuetaoleo/lixuetaoleo.github.io.git
+  repo: #git@github.com:your_user_name/your_user_name.github.io.git
   branch: master
