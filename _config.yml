@@ -1,0 +1,41 @@
+
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  About: /about
+  Archives: /archives
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/style.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/style.js
+
+social_icons:
+  enable: true
+  # Icon Mappings.
+  # KeyMapsToSocalItemKey: NameOfTheIconFromFontAwesome
+  GitHub: github
+  Twitter: twitter
+  Weibo: weibo
+  Instagram: instagram
+  Facebook: facebook
+  ZhiHu: zhihu
+  LinkedIn: linkedin
+  Skype: skype
+  CodeSandBox: codesandbox
+  CodePen: codepen
+  Sketch: sketch
+  Gitlab: gitlab
+  Dribble: dribble
+  Reddit: reddit
+  YouTube: youtube
+  QQ: qq
+  WeChat: wechat
+
+# quote on the main page
+description: Life is fantastic :)

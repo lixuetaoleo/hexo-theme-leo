@@ -1,0 +1,13 @@
+extends includes/layout.pug
+
+block content
+  article#post
+    h1= page.title
+    time(class='created-date' datetime=date_xml(page.date))= date(page.date)
+    //- br
+    //- span Updated Date: 
+    //- time(datetime=date_xml(page.updated))= date(page.updated)
+    != page.content
+  //- .sidebar-toc!= toc(page.content) 
+  //- 给toc传入当前页面的内容用于生成目录结构
+  #paginator!= paginator()

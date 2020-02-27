@@ -1,0 +1,39 @@
+//- extends includes/layout.pug
+
+doctype html
+html(lang=config.language)
+  head
+    meta(name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1")
+    meta(charset='UTF-8')
+    title= config.title
+    if theme.stylesheets !== undefined && theme.stylesheets.length > 0
+      //- stylesheets list from _config.yml
+      each url in theme.stylesheets
+        link(rel='stylesheet', href=url)
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato&display=swap" rel="stylesheet">
+  body
+    div#main-page
+      div#mega-title
+        h1!= config.author
+        p= theme.description
+      div#index-menu
+        each url, label in theme.menu
+          if label!=config.title
+            a(href=url)= label
+      div.main-socialmedia
+        each url,label in config.socialmedia
+          a(class='link-item main-link-item' title=label href=url)
+            i(class='iconfont icon-'+theme.social_icons[label])
+      footer#bottom
+        span © 
+        span= config.author
+        span . Powered By 
+        a(href='http://hexo.io')
+          span HEXO
+        span . Theme 
+        a(href='https://github.com/lixuetaoleo/hexo-theme-leo')= 'leo'
+        
+    if theme.scripts !== undefined && theme.scripts.length > 0
+      //- scripts list from config.yml
+      each url in theme.scripts
+        script(src=url)
