@@ -1,3 +1,4 @@
-# Personal-Blog-prototype
-design a prototype theme for my personal blog 
-TODO: Create a HEXO theme from the prototype
+# hexo-theme-leo
+
+A simple, elegant, clear and responsive HEXO theme
+
